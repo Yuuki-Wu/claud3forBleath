@@ -1,2 +1,3 @@
-# default
-stay health 
+# look
+keep health 
+always happy
