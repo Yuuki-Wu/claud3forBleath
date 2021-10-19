@@ -1,7 +1,7 @@
 from fractions import Fraction
 import sys
 
-def Check(filename1,filename2,filename3):
+def Check(filename1='Exercise.txt',filename2='Answer.txt',filename3='Grade.txt'):
     """filename1.txt与filename2.txt相比较，得出正确数"""
     num=0
     with open(filename1) as file01:
@@ -18,7 +18,7 @@ def Check(filename1,filename2,filename3):
         w = 0
         correct_topic =[]
         wrong_topic = []
-        for i in range(num):
+        for i in range(num):#for循环遍历
             if line1[i]==line2[i]:
                 c += 1
                 correct_topic.append(str(i+1))

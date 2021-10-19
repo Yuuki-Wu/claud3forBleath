@@ -12,7 +12,6 @@ def getTrueFractionBig(num):
         else:
             num = Fraction(num).limit_denominator(1000000000000000000000)#将小数化成分数
             break
-
     return str(t) + "'" + str(num)
 def getTrueFractionSmall(num):
     """获取小于一的真分数"""
